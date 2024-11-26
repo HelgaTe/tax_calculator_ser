@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 
+# Server application for tax calculator
 
 def calculate_taxes(base_salary, bonus, expensify, insurance):
     total_compensation = base_salary + bonus + expensify + insurance
