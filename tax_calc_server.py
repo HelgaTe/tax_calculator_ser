@@ -7,9 +7,11 @@ import pandas as pd
 def calculate_taxes(base_salary_expensify, bonus, insurance):
     total_compensation = base_salary_expensify + bonus + insurance
     single_tax = total_compensation * 0.05
-    military_tax = total_compensation * 0.01
+    # military_tax = total_compensation * 0.01
     social_tax = 45  # фіксована сума
-    total_taxes = single_tax + military_tax + social_tax
+
+    total_taxes = single_tax + social_tax # military tax is temporarily deactivated
+    # total_taxes = single_tax + military_tax + social_tax
 
     return total_compensation, single_tax, social_tax, total_taxes
     # military tax is temporarily deactivated (add to <return> for activation)
